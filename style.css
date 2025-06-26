@@ -228,3 +228,50 @@ html[lang="ru"] body {
 html[lang="en"] body {
   font-family: "Helvetica", sans-serif;
 }
+
+/* === [ДОБАВЛЕНО] Мобильная адаптация header, hero, меню и флагов === */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .flag-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  .flag {
+    width: 32px;
+    height: 20px;
+    object-fit: cover;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    padding: 0 1rem;
+    text-shadow: 0 0 4px black;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero img {
+    height: auto;
+  }
+}
