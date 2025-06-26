@@ -183,4 +183,48 @@ footer {
   text-align: center;
   padding: 1rem;
 }
-  
+
+/* === Добавлено: Адаптивность === */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container, .content, .main {
+    padding: 12px;
+  }
+}
+
+/* === Добавлено: Флаги === */
+.flag-container {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  gap: 8px;
+  background: white;
+}
+.flag {
+  width: 32px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 3px;
+  box-shadow: 0 0 2px #aaa;
+}
+
+/* === Добавлено: Стили для разных языков === */
+html[lang="ar"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[lang="ru"] body {
+  font-family: "Arial", sans-serif;
+}
+
+html[lang="en"] body {
+  font-family: "Helvetica", sans-serif;
+}
